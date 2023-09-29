@@ -1,0 +1,26 @@
+--Verbos HTTP--
+
+O laravel ele foi feito no padrão de ROTAS, ou seja, não é carregado um novo documento quando clicamos em outro link. Esse padrão rotas segue um protocolo que para ser acessado utilizamos os verbos http.
+
+GET - é utilizado quando se deseja “pegar” alguma coisas do site/api. Em outras palavras quando quiser exibir alguma coisa.
+POST - é utilizado quando se deseja fazer algum cadastro no site/api.
+PUT - é utilizado quando se deseja atualizar algum dado do site/api.
+DELETE - é utilizado quando se deseja apagar alguma coisa do site /api.
+Vamos utilizar esses verbos para fazer um CRUD. CRUD são as quatro operações básicas do desenvolvimento de uma aplicação (cadastrar, ler, alterar e excluir), sendo utilizadas em bases de dados relacionais fornecidos aos utilizadores do sistema.
+
+CRUD
+são as quatro operações básicas do desenvolvimento de uma aplicação, sendo utilizadas em bases de dados relacionais fornecidas aos utilizadores do sistema.
+C – Create – Criar, cadastrar
+R – read – Ler, exibir
+U – Update – Atualizar
+D – Delete – Deletar
+
+Status code
+Para sabermos se uma solicitação foi ou não bem sucedida, são utilizados os status code.
+Lista de status code: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Padrão de Arquitetura MVC
+Basicamente, a arquitetura MVC é um padrão de arquitetura de software que divide a aplicação em três camadas: manipulação dos dados (model); interação do usuário (view); camada de controle (controller).
+
+
+Para iniciar com laravel, precisamos ter o php instalado e o composer.
