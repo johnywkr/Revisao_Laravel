@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Inicio</title>
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -11,12 +12,13 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
     </head>
     <body>
-        <header class="container">
+        <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/">TEC</a>
+                    <a class="navbar-brand" href="#">TEC-NY</a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -34,12 +36,7 @@
                     >
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                    >Inicio</a
-                                >
+                            <a class="nav-link active" aria-current="page" href="/" >Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/sobre">Sobre</a>
@@ -50,14 +47,15 @@
             </nav>
         </header>
 
-        <main class="container">
+        <main>
             @yield('content')
         </main>
 
         <footer>
-            <p>&copy; Tec Dev</p>
+            <p>&copy; TEC-NY</p>
         </footer>
     </body>
+
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
