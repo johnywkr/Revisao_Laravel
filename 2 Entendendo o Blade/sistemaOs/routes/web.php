@@ -14,9 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $nomes = ['johne','victor','gui','kety'];
+    return view('sistems.welcome', ['nomes'=>$nomes]);
 });
 
 Route::get('/sobre', function () {
-    return view('sobre');
+    $nomes = ['johne','victor','gui','kety', 'hudson'];
+    $idade = 23;
+    return view('sistemas.sobre', ['nomes'=>$nomes, 'idade'=>$idade]);
+});
+
+Route::get('/servicos', function () {
+    $nomes = ['johne','victor','gui','kety', 'hudson'];
+    $idade = 23;
+
+    return view('sistemas.servicos', ['nomes'=>$nomes, 'idade'=>$idade]);
 });

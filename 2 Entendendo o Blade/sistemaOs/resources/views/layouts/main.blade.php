@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inicio</title>
-
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -12,13 +10,14 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/script.js"></script>
+        <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+        <title>@yield('title')</title>
     </head>
     <body>
-        <header>
+        <header class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">TEC-NY</a>
+                    <a class="navbar-brand" href="#"><img src="/img/logo.png" width="50%"></a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -41,17 +40,20 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/sobre">Sobre</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/servicos">Serviços</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main>
+        <main class="container">
             @yield('content')
         </main>
 
-        <footer>
+        <footer class="container">
             <p>&copy; TEC-NY</p>
         </footer>
     </body>
@@ -61,4 +63,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"
     ></script>
+    <script src="/js/script.js"></script>
 </html>
