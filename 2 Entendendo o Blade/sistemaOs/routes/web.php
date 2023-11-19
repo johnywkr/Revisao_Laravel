@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SistemaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,20 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $nomes = ['johne','victor','gui','kety'];
-    return view('sistems.welcome', ['nomes'=>$nomes]);
-});
+Route::get('/', [SistemaController::class, 'welcome']);
 
-Route::get('/sobre', function () {
-    $nomes = ['johne','victor','gui','kety', 'hudson'];
-    $idade = 23;
-    return view('sistemas.sobre', ['nomes'=>$nomes, 'idade'=>$idade]);
-});
+Route::get('/sobre',[SistemaController::class,'sobre']);
 
-Route::get('/servicos', function () {
-    $nomes = ['johne','victor','gui','kety', 'hudson'];
-    $idade = 23;
-
-    return view('sistemas.servicos', ['nomes'=>$nomes, 'idade'=>$idade]);
-});
+Route::get('/servicos',[SistemaController::class, 'servicos']);
