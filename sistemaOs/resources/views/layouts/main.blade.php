@@ -44,7 +44,7 @@
                                 <a class="nav-link" href="/servicos">Serviços</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/cliente/cadastar">Cadastrar cliente</a>
+                                <a class="nav-link" href="/cliente/cadastra">Cadastrar cliente</a>
                             </li>
                         </ul>
                     </div>

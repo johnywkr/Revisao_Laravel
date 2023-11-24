@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class ClienteController extends Controller
 {
     public function create(){
-        return view('cliente.cadastrar');
+        return view('clientes.cadastrar');
     }
 }
