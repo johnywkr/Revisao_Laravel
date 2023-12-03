@@ -23,3 +23,4 @@ Route::get('/sobre',[SistemaController::class,'sobre']);
 Route::get('/servicos',[SistemaController::class, 'servicos']);
 
 Route::get('/cliente/cadastrar',[ClienteController::class, 'create']);
+Route::post('/cliente/cadastrar',[ClienteController::class, 'store']);
