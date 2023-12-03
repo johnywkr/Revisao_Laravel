@@ -1,3 +1,10 @@
 h1{
     color:#1100ff;
 }
+
+/* stily tela de cadastro */
+
+section.cadastrar-cliente{
+    width: 70%;
+    
+}
