@@ -7,13 +7,14 @@
     <h1>Cadastrar Clientes</h1>
 
     <form class="row g-3" action="/cliente" method="post">
+        @csrf
         <div class="col-md-4">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome">
         </div>
         <div class="col-md-4">
             <label for="nome" class="form-label">Cpf</label>
-            <input type="text" class="form-control" id="cpf" name="cpf">
+            <input type="number" class="form-control" id="cpf" name="cpf">
         </div>
         <div class="col-md-4">
             <label for="endereco" class="form-label">Endereço</label>
@@ -25,7 +26,7 @@
         </div>
         <div class="col-md-6">
             <label for="telefone" class="form-label">Telefone</label>
-            <input type="text" class="form-control" id="telefone" name="email">
+            <input type="tel" class="form-control" id="telefone" name="telefone">
         </div>
         <div class="col-md-4">
             <label for="datanasc" class="form-label">Data de Nascimento</label>
@@ -33,7 +34,7 @@
         </div>
         <div class="col-md-2">
             <label for="cep" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="cep" name="cep">
+            <input type="number_format" class="form-control" id="cep" name="cep">
         </div>
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Cadastrar</button>
